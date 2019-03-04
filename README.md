@@ -1,19 +1,12 @@
 ## Project: Follow Me
-### Project 2 submission by Lewis Siempelkamp for Udacity's Robotics NanoDegree Term 1 
-### February 2019
+### Project 4 submission by Lewis Siempelkamp for Udacity's Robotics NanoDegree Term 1 
+### March 4th 2019
 
 ---
 [//]: # (Image References)
 
 [image1]: ./images/default_gzclient_camera(1)-2019-02-24T00_02_38.452216.jpg
-[image2]: ./images/rviz_screenshot_2019_02_23-23_57_53.png
-[image3]: ./images/rviz_screenshot_2019_02_23-23_58_34.png
-[image4]: ./images/rviz_screenshot_2019_02_24-00_00_22.png
-[image5]: ./images/rviz_screenshot_2019_02_24-00_00_44.png
-[image6]: ./images/rviz_screenshot_2019_02_24-00_01_24.png
-[image7]: ./images/rviz_screenshot_2019_02_24-00_03_37.png
-[image8]: ./images/figure_2-2.png
-[image9]: ./images/rviz_screenshot_2019_02_24-01_01_57.png
+
 
 # Required Steps for a Passing Submission:
 1. Extract features and train an SVM model on new objects (see `pick_list_*.yaml` in `/pr2_robot/config/` for the list of models you'll be trying to identify). 
