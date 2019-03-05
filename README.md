@@ -8,6 +8,7 @@
 [image1]: ./images/1.jpg
 [image2]: ./images/diagram.jpg
 [image3]: ./images/training_curves.jpg
+[image4]: ./images/Predictions.JPG
 
 
 ![Project][image1]
@@ -116,8 +117,10 @@ The below figure shows how the loss initially reduces quickly in the first 20 ep
 Although once could conceivably have a perfect dataset and tuned hyper parameters that can train a model in one pass, for this project the model was trained using several passes with different hyper parameters and the dataset being fed updates regularly to help fill in the learning deficincies during trianing.    
 
 Using the above descriped FCN, Hyper Parameters, and training set, a [model](/data/weights/model_weightsA8) was trained until it reached the target IOU accuracy of 40%.
-The model successfuly differentiates between the target actor, background actors, and background environment.
+The model successfuly differentiates between the target actor, background actors, and background environment with a final score of 40.1%
 
 The model can be run in real time by running the follower.py <model-weights script in conjunction with the Unity Quad Sim.
 
-![Project][image1]
+Predictions from the model can be seen below demonstrating that the model succesfully differentiates between the target and background actors and background environment.
+
+![Predictions][image4]
