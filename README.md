@@ -6,6 +6,11 @@
 [//]: # (Image References)
 
 [image1]: ./images/1.jpg
+[image2]: ./images/diagram.jpg
+[image3]: ./images/training_curves.jpg
+
+
+![Project][image1]
 
 
 # Requirements for a Passing Submission:
@@ -84,7 +89,7 @@ With Skip Connections from:
     Encoder Layer 1 -> Decoder Layer 1
     Input Layer -> Decoder Layer 2
 
-ILLUSTRATION OF THE NETWORK
+![Diagram][image2]
     
 The FCN network model, Encoder Layers, Decoder Layers, and Fully Connected Layers can be seen implemented in code in [model_training.ipynm](/code/).
 
@@ -105,9 +110,14 @@ Number of Epochs: ~40
 Number of Steps per Epoch: ~Total Sample Count/Batch Size
     Since hardware limits prevent an entire trianing be passed through the network at once, the trainer must step through the samples in increments of the batch size.
 
+The below figure shows how the loss initially reduces quickly in the first 20 epochs but only small reductions in loss are seen afterwards:
+![training curves][image3]
+
 Although once could conceivably have a perfect dataset and tuned hyper parameters that can train a model in one pass, for this project the model was trained using several passes with different hyper parameters and the dataset being fed updates regularly to help fill in the learning deficincies during trianing.    
 
 Using the above descriped FCN, Hyper Parameters, and training set, a [model](/data/weights/model_weightsA8) was trained until it reached the target IOU accuracy of 40%.
 The model successfuly differentiates between the target actor, background actors, and background environment.
 
 The model can be run in real time by running the follower.py <model-weights script in conjunction with the Unity Quad Sim.
+
+![Project][image1]
