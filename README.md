@@ -77,7 +77,9 @@ Within the FCN model there exist several configurable parameters.
 For the purpose of this project an FCN was conctructed to analyze an incoming stream of RGB images to perform pixel-wise semantic-segmenation of the image to classify what objects it is seeing and where those objects lie in the image.
 
 The FCN constructed is comprised of the following layers and connections:
-    Input Layer [3 Featuremaps] -> Encoder Layer 1 [32 Filters] -> Encoder Layer 2 [64 Filters] -> 1X1 Convolution Layer [128 Filters] -> Decoder Layer 1 [64 Filters] -> Decoder Layer 2 [32 Filters] -> Output Layer [3 Featuremaps]
+
+Input Layer [3 Featuremaps] -> Encoder Layer 1 [32 Filters] -> Encoder Layer 2 [64 Filters] -> 1X1 Convolution Layer [128 Filters] -> Decoder Layer 1 [64 Filters] -> Decoder Layer 2 [32 Filters] -> Output Layer [3 Featuremaps]
+    
 With Skip Connections from: 
     Encoder Layer 1 -> Decoder Layer 1
     Input Layer -> Decoder Layer 2
